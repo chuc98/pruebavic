@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Perfil</title>
+    <link rel="shortcut icon" href="../static/ekko.jpg" type ="image/x-icon">
+    <link rel="stylesheet" href="{{url_for('static',filename='logest.css')}}">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="hero">
+        <nav class="nav__hero">
+            <div class="container nav__container">
+                <div class="logo">
+                    <h2 class="logo__name">Ekkos<span class="point">.</span></h2>
+                </div>
+                <div class="links">
+                    <a href="#" class="link">Inicio</a>
+                    <a href="#" class="link">Catalogo</a>
+                    <a href="/" class="link link--active">Cerrar sesión</a>
+                </div>
+            </div>
+        </nav>
+
+
+        <section class="container hero__main">  
+            <div class="hero__textos">
+                <h1 class="title">Bievenido a <span class="title--active">Tu Perfil.</span></h1> 
+                <p class="copy">No olvides subir  <span class="copy__active">tu contrato</span></p>
+                <form action="/B" method="POST" enctype="multipart/form-data">
+                <label for="Sube tu archivo"></label>
+                <input type="file" name="archi">
+                <div><button type="submit" type="file">Sube tu Contrato</button></div>
+            </div>
+                </form>
+            <img src= "../static/fondoperfil.jpg"class="mockup">
+            
+        </section>
+    </header>
+
+    <main>
+        <section class="services">
+            <div class="container">
+                <h2 class="subtitle">Tu espacio<span class="point">.</span></h2>
+                <p class="copy__section">No esperes mas para interactuar con la página</p>
+
+                <article class="container-cards">
+                    <div class="card">
+                        <img src="../static/form.jpg" class="card__img">
+                        <div class="cards__text">
+                            <p class="card__list">¿Algun Dato incorrecto?</p>
+                            <h3 class="card__title">Datos Personales<span class="point">.</span></h3>
+                            <p class="card__copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel dolorum sit molestias ipsam at veritatis ut esse eius, dolor est!</p>
+                            <a href="/actualizar" class="card__button">Modifica tus datos</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../static/puntos.jpg" class="card__img">
+                        <div class="cards__text">
+                            <p class="card__list">Puedes empezar a interactuar con tus puntos</p>
+                            <h3 class="card__title">Tus Puntos<span class="point">.</span></h3>
+                            <p class="card__copy">Visualiza como gastaste tus puntos</p>
+                            <a href="#" class="card__button">Balance de Puntos</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../static/img3.png" class="card__img">
+                        <div class="cards__text">
+                            <p class="card__list">Modifica tu foto</p>
+                            <h3 class="card__title">Tu perfil<span class="point">.</span></h3>
+                            <p class="card__copy">Aqui Puedes modificar tu foto!</p>
+                            <a href="#" class="card__button">Comienza tu proyecto</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        
+
+        <section class="email container container--modifier">
+            <h2 class="subtitle subtitle--modifier">Somos la mejor opción en sistema de puntos<span class="point">.</span></h2>
+
+            <p class="copy__section copy__section--modifier">En Ekkos queremos brindarte una experiencia sin tantos procedimientos!</p>
+
+            <div class="check">
+                <div class="check__item">
+                    <i class='bx bx-check' ></i>
+                    <div class="check__numbers">
+                        <p class="check__number">+10000</p>
+                        <p class="check__copy">Familias Apoyadas</p>
+                    </div>
+                </div>
+                <div class="check__item">
+                    <i class='bx bx-check' ></i>
+                    <div class="check__numbers">
+                        <p class="check__number">+200</p>
+                        <p class="check__copy">Usuarios por día</p>
+                    </div>
+                </div>
+                <div class="check__item">
+                    <i class='bx bx-check' ></i>
+                    <div class="check__numbers">
+                        <p class="check__number">100</p>
+                        <p class="check__copy">Veces mas sencillo que la competencia</p>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+
+    
+
+        <div class="contact">
+            <div class="item__contact">
+                <i class='bx bx-copyright contact__icon' ></i>
+                <h3 class="contact__title">Ekkos</h3>
+            </div>
+            <div class="item__contact">
+                <i class='bx bx-mail-send contact__icon' ></i>
+                <h3 class="contact__title">brayam.jacinto@lasallistas.org.mx</h3>
+            </div>
+            <div class="item__contact">
+                <i class='bx bxs-edit-location contact__icon' ></i>
+                <h3 class="contact__title">Brooklyn 699</h3>
+            </div>
+            <div class="item__contact item__contact--gold">
+               <i class='bx bxs-phone-incoming'></i>
+                <h3 class="contact__title">55-79-19-14-37</h3>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
